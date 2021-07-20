@@ -13,8 +13,8 @@ import Helmet from "../component/common/Helmet";
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Freelance digital designer',
-        title: 'Hello, I’m <span>Nancy</span> Welcome to my World.',
+        category: 'Software Engineer & Musician',
+        title: 'I\'m <span>Tong</span>. \n Hello World :)',
         description: '',
         buttonText: '',
         buttonLink: ''
@@ -37,10 +37,9 @@ const PortfolioLanding = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-12">
-
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            {value.title ? <h1 className="title" dangerouslySetInnerHTML={{__html: value.title}}></h1> : ''}
+                                            {value.title ? <div><h1 className="code">> I'm <span>Tong</span></h1> <h1 className="code"> > Hello World :)</h1></div> : ''}
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
